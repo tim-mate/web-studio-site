@@ -138,3 +138,14 @@ button {
     line-height: 1.71;
 }
 
+
+/* Services */
+.services-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--headline-text-color);
+}
