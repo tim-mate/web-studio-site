@@ -177,3 +177,38 @@ button {
 
     color: var(--headline-text-color);
 }
+
+
+/* Portfolio */
+
+/* Filter*/
+.btn {
+    font-weight: 500;
+    line-height: 1.63;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--headline-text-color);
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--header-background-color);
+    background-color: var(--accent-text-color);
+}
+
+/* Projects */
+.projects-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--headline-text-color);
+}
+
+.projects-desc {
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
