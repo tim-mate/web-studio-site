@@ -119,3 +119,22 @@ button {
     background-color: var(--accent-text-color);
 }
 
+/* Features */
+.features {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+}
+
+.features-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--headline-text-color);
+}
+
+.features-desc {
+    line-height: 1.71;
+}
+
