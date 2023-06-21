@@ -70,3 +70,52 @@ button {
 .active:focus {
     color: var(--accent-text-color);
 }
+
+
+/* Footer */
+.footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--footer-text-color);
+    background-color: var(--secondary-background-color);
+}
+
+.address {
+    color: var(--header-background-color);
+}
+
+.footer * {
+    font-style: normal;
+}
+
+
+/* Studio */
+
+/* Hero */
+.hero {
+    background-color: var(--secondary-background-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--header-background-color);
+}
+
+.hero-btn {
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--header-background-color);
+    background-color: var(--accent-text-color);
+}
+
