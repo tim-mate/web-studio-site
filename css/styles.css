@@ -149,3 +149,31 @@ button {
 
     color: var(--headline-text-color);
 }
+
+
+/* Team */
+.team {
+    background-color: var(--subsidiary-background-color);
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--headline-text-color);
+}
+
+.team-list {
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-subtitle {
+    font-weight: 500;
+
+    color: var(--headline-text-color);
+}
