@@ -40,7 +40,21 @@ button {
 }
 
 
+
 /* Header */
+.header-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    width: 1200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
 .header {
     font-weight: 500;
     font-size: 14px;
@@ -50,8 +64,44 @@ button {
     background-color: var(--header-background-color);
 }
 
+.nav-list, 
+.contacts-list {
+    display: flex;
+    padding-left: 0;
+}
+
+.nav,
+.nav:visited {
+    color: var(--headline-text-color);
+}
+
+.nav-list {
+    margin-left: 93px;
+}
+
+.contacts-list {
+    margin-left: auto;
+}
+
+.contacts,
+.contacts:visited {
+    color: var(--main-text-color);
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 /* Logo */
 .logo {
+    display: inline-block;
+    width: 145px;
+    height: 31px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -59,6 +109,7 @@ button {
     letter-spacing: 0.03em;
 
     color: var(--logo-text-color);
+
 }
 
 .accent {
@@ -71,8 +122,18 @@ button {
     color: var(--accent-text-color);
 }
 
-
 /* Footer */
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    height: 252px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer {
     font-size: 14px;
     line-height: 1.71;
@@ -81,6 +142,26 @@ button {
     color: var(--footer-text-color);
     background-color: var(--secondary-background-color);
 }
+
+.address-list {
+    padding: 0;
+    margin: 0;
+}
+
+.address-list:first-child {
+    margin-top: 20px;
+}
+
+.address-list-item {
+    width: 231px;
+    height: 21px;
+    
+}
+
+.address-list-item + .address-list-item {
+    margin-top: 9px;
+}
+
 
 .address {
     color: var(--header-background-color);
@@ -94,11 +175,25 @@ button {
 /* Studio */
 
 /* Hero */
+.hero-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .hero {
     background-color: var(--secondary-background-color);
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -108,25 +203,66 @@ button {
     text-transform: uppercase;
 
     color: var(--header-background-color);
+
 }
 
 .hero-btn {
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    min-width: 216px;
+    min-height: 50px;
+    border-radius: 4px;
+    border: transparent;
+
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
 
     color: var(--header-background-color);
     background-color: var(--accent-text-color);
+
 }
 
 /* Features */
+.features-container {
+    width: 1200px;
+    height: 286px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
 .features {
     font-size: 14px;
     letter-spacing: 0.03em;
 
 }
 
+.features-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.features-list-item {
+    width: 270px;
+    margin-top: 94px;
+
+}
+
+.features-ghost-title {
+    display: none;
+}
+
 .features-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -135,11 +271,26 @@ button {
 }
 
 .features-desc {
+    margin: 0;
+
     line-height: 1.71;
+    letter-spacing: 0.42px;
+
 }
 
 
 /* Services */
+.services-container {
+    width: 1200px;
+    height: 480px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .services-title {
     font-weight: 700;
     font-size: 36px;
@@ -152,11 +303,26 @@ button {
 
 
 /* Team */
+.team-container {
+    width: 1200px;
+    height: 648px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
 .team {
     background-color: var(--subsidiary-background-color);
 }
 
 .team-title {
+    margin: 0;
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -167,22 +333,99 @@ button {
 }
 
 .team-list {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    margin: 0;
+
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
 .team-subtitle {
+    margin-top: 30px;
+    margin-bottom: 0;
+
     font-weight: 500;
 
     color: var(--headline-text-color);
 }
 
+.team-desc {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
 
 /* Portfolio */
+.projects-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.projects {
+    background-color: var(--header-background-color);
+}
+
+.projects-buttons {
+    margin: 0 0 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.projects-buttons-btn:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn{
+   padding-left: 22px;
+   padding-right: 22px;
+   height: 38px;
+}
+
+.first-btn {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.projects-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.projects-list-item {
+    width: 370px;
+
+    border: 1px solid #EEE;
+} 
+
+.projects-list .projects-list-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+}
+
+.projects-ghost-title {
+    display: none;
+}
 
 /* Filter*/
 .btn {
+    border-radius: 4px;
+    border: transparent;
+    height: 38px;
+
     font-weight: 500;
     line-height: 1.63;
 
@@ -199,16 +442,24 @@ button {
 }
 
 /* Projects */
+
 .projects-title {
+    margin-top: 20px;
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 
     color: var(--headline-text-color);
+
 }
 
 .projects-desc {
+    margin-top: 0;
+    margin-bottom: 20px;
+
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
