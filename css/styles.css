@@ -40,17 +40,12 @@ button {
 }
 
 
-
 /* Header */
 .header-container {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 24px 15px 25px;
     width: 1200px;
     height: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
 }
@@ -124,14 +119,10 @@ button {
 
 /* Footer */
 .footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
     width: 1200px;
     height: 252px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 60px 15px;
 }
 
 .footer {
@@ -155,13 +146,11 @@ button {
 .address-list-item {
     width: 231px;
     height: 21px;
-    
 }
 
 .address-list-item + .address-list-item {
     margin-top: 9px;
 }
-
 
 .address {
     color: var(--header-background-color);
@@ -176,14 +165,10 @@ button {
 
 /* Hero */
 .hero-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 1200px;
     height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 200px 15px;
 }
 
 .hero {
@@ -203,16 +188,12 @@ button {
     text-transform: uppercase;
 
     color: var(--header-background-color);
-
 }
 
 .hero-btn {
     display: block;  
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 10px 32px;
-    min-width: 216px;
-    min-height: 50px;
     border-radius: 4px;
     border: transparent;
 
@@ -222,18 +203,15 @@ button {
 
     color: var(--header-background-color);
     background-color: var(--accent-text-color);
-
 }
+
 
 /* Features */
 .features-container {
     width: 1200px;
     height: 286px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-   
+    margin: 0 auto;
+    padding: 94px 15px;
 }
 
 .features {
@@ -251,8 +229,6 @@ button {
 
 .features-list-item {
     width: 270px;
-    margin-top: 94px;
-
 }
 
 .features-ghost-title {
@@ -292,6 +268,8 @@ button {
 }
 
 .services-title {
+    margin: 0;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -306,13 +284,8 @@ button {
 .team-container {
     width: 1200px;
     height: 648px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
-
+    margin: 0 auto;
+    padding: 94px 15px;
 }
 
 .team {
@@ -320,8 +293,7 @@ button {
 }
 
 .team-title {
-    margin: 0;
-    margin-bottom: 50px;
+    margin: 0 0 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -335,12 +307,17 @@ button {
 .team-list {
     display: flex;
     padding: 0;
-    justify-content: space-between;
     margin: 0;
-
+    justify-content: space-between;
+    
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.team-list-item {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .team-subtitle {
@@ -355,42 +332,21 @@ button {
 .team-desc {
     margin-top: 10px;
     margin-bottom: 30px;
-
 }
 
 
 /* Portfolio */
-.projects-container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-   
-    
-    padding-top: 94px;
-    padding-bottom: 94px;
 
-}
-
-.projects {
-    background-color: var(--header-background-color);
-}
-
+/* Filter*/
 .projects-buttons {
     margin: 0 0 50px;
     padding: 0;
     display: flex;
     justify-content: center;
-
 }
 
 .projects-buttons-btn:not(:last-child) {
     margin-right: 8px;
-}
-
-.btn{
-   padding-left: 22px;
-   padding-right: 22px;
-   height: 38px;
 }
 
 .first-btn {
@@ -398,32 +354,12 @@ button {
     padding-right: 25px;
 }
 
-.projects-list {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.projects-list-item {
-    width: 370px;
-
-    border: 1px solid #EEE;
-} 
-
-.projects-list .projects-list-item:not(:nth-last-child(-n+3)) {
-    margin-bottom: 30px;
-}
-
-.projects-ghost-title {
-    display: none;
-}
-
-/* Filter*/
 .btn {
     border-radius: 4px;
     border: transparent;
+    height: 38px;
+    padding-left: 22px;
+    padding-right: 22px;
     height: 38px;
 
     font-weight: 500;
@@ -442,10 +378,38 @@ button {
 }
 
 /* Projects */
+.projects-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 94px 15px;
+}
+
+.projects {
+    background-color: var(--header-background-color);
+}
+
+.projects-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projects-list-item {
+    width: 370px;
+    height: 404px;
+
+    border: 1px solid #EEE;
+}
+
+.projects-ghost-title {
+    display: none;
+}
 
 .projects-title {
-    margin-top: 20px;
-    margin-bottom: 4px;
+    margin: 20px auto 4px 24px;
 
     font-weight: 700;
     font-size: 18px;
@@ -453,12 +417,10 @@ button {
     letter-spacing: 0.06em;
 
     color: var(--headline-text-color);
-
 }
 
 .projects-desc {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 auto 20px 24px;
 
     line-height: 1.88;
     letter-spacing: 0.03em;
