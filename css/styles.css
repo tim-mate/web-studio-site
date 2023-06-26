@@ -78,6 +78,15 @@ button {
     margin-left: auto;
 }
 
+.contacts {
+    display: flex;
+}
+
+.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .contacts,
 .contacts:visited {
     color: var(--main-text-color);
