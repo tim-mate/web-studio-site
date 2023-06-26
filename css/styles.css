@@ -128,10 +128,22 @@ button {
 
 /* Footer */
 .footer-container {
+    display: flex;
     width: 1200px;
     height: 252px;
     margin: 0 auto;
     padding: 60px 15px;
+}
+
+.logo-address-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
 }
 
 .footer {
@@ -167,6 +179,50 @@ button {
 
 .footer * {
     font-style: normal;
+}
+
+.socials-title {
+    margin: 12px 0 20px 0;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    color: var(--header-background-color);
+}
+ 
+.socials-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.socials-list-item {
+    width: 44px;    
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+
+}
+
+.socials-list-item:hover,
+.socials-list-item:focus {
+    background-color: var(--accent-text-color);
+}
+
+.socials-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-icon {
+    width: 20px;
+    height: 20px;
+
+    fill: var(--header-background-color);
 }
 
 
