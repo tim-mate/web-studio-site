@@ -158,6 +158,11 @@ button {
     margin: 0;
 }
 
+.mail,
+.tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .address-list:first-child {
     margin-top: 20px;
 }
