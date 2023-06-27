@@ -68,7 +68,11 @@ button {
 .nav-list, 
 .contacts-list {
     display: flex;
-    padding-left: 0;
+    padding: 0;
+}
+
+.nav {
+    padding: 32px 0;
 }
 
 .nav,
@@ -77,11 +81,15 @@ button {
 }
 
 .nav-list {
-    margin-left: 93px;
+    margin: 0 0 0 93px;
 }
 
 .contacts-list {
-    margin-left: auto;
+    margin: 0 0 0 auto;
+}
+
+.contacts {
+    padding: 32px 0;
 }
 
 .contacts,
@@ -95,6 +103,7 @@ button {
 
 .contacts-list-item:not(:last-child) {
     margin-right: 50px;
+
 }
 
 /* Logo */
