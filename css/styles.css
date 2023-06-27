@@ -471,7 +471,6 @@ button {
 .clients-list-item {
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
 
     border-radius: 4px;
     border: 1px solid #AFB1B8;
@@ -484,6 +483,10 @@ button {
 }
 
 .clients-icon {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+
     fill: rgba(175, 177, 184, 1);
 }
 
