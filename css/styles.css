@@ -22,6 +22,12 @@ body {
     background-color: var(--main-background-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 15px;
+}
+
 .logo,
 .active {
     text-decoration: none;
@@ -134,6 +140,10 @@ button {
     background-color: var(--secondary-background-color);
 }
 
+.footer .logo {
+    color: var(--header-background-color);
+}
+
 .address-list {
     padding: 0;
     margin: 0;
@@ -164,13 +174,6 @@ button {
 /* Studio */
 
 /* Hero */
-.hero-container {
-    margin: 0 auto;
-    width: 1200px;
-    height: 600px;
-    padding: 200px 15px;
-}
-
 .hero {
     background-color: var(--secondary-background-color);
 }
@@ -205,15 +208,12 @@ button {
     background-color: var(--accent-text-color);
 }
 
+  .hero-btn:hover,
+  .hero-btn:focus {
+    box-shadow: inset 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+ }
 
 /* Features */
-.features-container {
-    width: 1200px;
-    height: 286px;
-    margin: 0 auto;
-    padding: 94px 15px;
-}
-
 .features {
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -256,17 +256,6 @@ button {
 
 
 /* Services */
-.services-container {
-    width: 1200px;
-    height: 480px;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
 .services-title {
     margin: 0;
 
@@ -281,13 +270,6 @@ button {
 
 
 /* Team */
-.team-container {
-    width: 1200px;
-    height: 648px;
-    margin: 0 auto;
-    padding: 94px 15px;
-}
-
 .team {
     background-color: var(--subsidiary-background-color);
 }
