@@ -441,8 +441,12 @@ button {
     background-color: var(--header-background-color);
 }
 
+.services-container {
+    padding-top: 0;
+}
+
 .services-title {
-    margin: 0;
+    margin: 0 0 50px 0;
 
     font-weight: 700;
     font-size: 36px;
@@ -453,6 +457,43 @@ button {
     color: var(--headline-text-color);
 }
 
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.services-list-item {
+    margin: 0;
+    padding: 0;
+}
+
+.service-thumb {
+    position: relative;
+    
+    height: 294px;
+}
+
+.services-desc {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 27px 0;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    color: var(--header-background-color);
+    background-color: rgba(47, 48, 58, 0.80);
+}
 
 /* Team */
 .team {
