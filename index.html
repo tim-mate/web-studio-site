@@ -375,12 +375,34 @@
                     </li>
                 </ul>
             </div>
+
+            <form class="footer-form">
+                <b class="form-action">Підпишіться на розсилку</b>
+
+                <div class="form-mail">
+                    <label class="form-field">
+                        <span class="form-label">E-mail</span>
+                        <input type="email" name="email" class="form-input">
+                    </label>
+
+                    <button type="submit" class="form-btn">
+                        Підписатися
+                        <svg width="24px" height="24px">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn" data-modal-close></button>
+            <button class="modal-btn" data-modal-close>
+                <svg width="18px" height="18px" class="modal-btn-icon">
+                    <use href="./images/icons.svg#close"></use>
+                </svg> 
+            </button>
         </div>
     </div>
 
