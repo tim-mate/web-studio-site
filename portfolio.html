@@ -60,27 +60,36 @@
             <h1 class="projects-ghost-title">Projects</h1>
 
             <div class="container">
-                <ul class="projects-buttons">
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn first-btn">Усі</button>
-                    </li>
+                <form class="filter">
+                    <ul class="projects-buttons">
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="all" id="all" class="projects-input" checked/>
+                            <label class="projects-label first" for="all">Усі</label>
+                        </li>
+                    
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="web" id="web" class="projects-input" />
+                            <label class="projects-label" for="web">Веб-сайти</label>
+                        </li>
+                    
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="app" id="app" class="projects-input" />
+                            <label class="projects-label" for="app">Додатки</label>
+                        </li>
+                    
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="design" id="design" class="projects-input" />
+                            <label class="projects-label" for="design">Дизайн</label>
+                        </li>
+                    
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="marketing" id="marketing" class="projects-input" />
+                            <label class="projects-label last" for="marketing">Маркетинг</label>
+                        </li>
+                    </ul>
+                </form>
+
                 
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn">Веб-сайти</button>
-                    </li>
-                
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn">Додатки</button>
-                    </li>
-                
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn">Дизайн</button>
-                    </li>
-                
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn">Маркетинг</button>
-                    </li>
-                </ul>
                 
                 <ul class="projects-list">
                     <li class="projects-list-item">
