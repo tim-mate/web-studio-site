@@ -307,8 +307,6 @@ button {
     font-size: 14px;
     letter-spacing: 0.03em;
     background-color: var(--header-background-color);
-
-    background-color: var(--header-background-color);
 }
 
 .features-list {
@@ -327,9 +325,7 @@ button {
     height: 120px;
     padding: 25px 100px;
     border-radius: 4px;
-
     background-color: var(--subsidiary-background-color);
-
 }
 
 .features-ghost-title {
