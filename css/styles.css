@@ -45,6 +45,9 @@ button {
     cursor: pointer;
 }
 
+.socials-list-item:hover {
+    cursor: pointer;
+}
 
 /* Header */
 .header-container {
