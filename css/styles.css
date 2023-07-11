@@ -90,11 +90,10 @@ button {
 }
 
 .contacts {
-    padding: 32px 0;
-}
-
-.contacts {
     display: flex;
+    align-items: center;
+
+    padding: 32px 0;
 }
 
 .contacts-icon {
