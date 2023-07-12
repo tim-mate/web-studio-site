@@ -143,7 +143,6 @@ button {
     letter-spacing: 0.03em;
 
     color: var(--logo-text-color);
-
 }
 
 .accent {
@@ -164,8 +163,7 @@ button {
 .footer-container {
     display: flex;
     height: 252px;
-    padding: 60px 15px;
-    
+    padding: 60px 15px;  
 }
 
 .logo-address-container {
@@ -386,8 +384,6 @@ button {
 .features {
     font-size: 14px;
     letter-spacing: 0.03em;
-    background-color: var(--header-background-color);
-
     background-color: var(--header-background-color);
 }
 
