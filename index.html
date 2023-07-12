@@ -375,12 +375,91 @@
                     </li>
                 </ul>
             </div>
+
+            <form class="footer-form">
+                <b class="form-action">Підпишіться на розсилку</b>
+
+                <div class="form-mail">
+                    <label class="form-field">
+                        <span class="form-label">E-mail</span>
+                        <input type="email" name="email" class="form-input">
+                    </label>
+
+                    <button type="submit" class="form-btn">
+                        Підписатися
+                        <svg width="24px" height="24px">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn" data-modal-close></button>
+            <button class="modal-btn" data-modal-close>
+                <svg width="18px" height="18px" class="modal-btn-icon">
+                    <use href="./images/icons.svg#close"></use>
+                </svg> 
+            </button>
+
+            <form class="modal-form">
+                <b class="form-action">Залиште свої дані, ми вам передзвонимо</b>
+                <ul class="form-list">
+                    <li class="form-list-item">
+                        <label class="form-field">
+                            <span class="label">Ім'я</span>
+                    
+                            <input type="text" name="user" class="input">
+
+                            <svg width="18px" height="18px" class="icon">
+                                <use href="./images/icons.svg#person"></use>
+                            </svg>
+                        </label>
+                    </li>
+
+                    <li class="form-list-item">
+                        <label class="form-field">
+                            <span class="label">Телефон</span>
+                    
+                            <input type="tel" name="tel" class="input" 
+                            pattern="^\+?3?8?(0\d{9})$"
+                            title="Будь ласка, введіть дані в наступному форматі +380111111111">
+                    
+                            <svg width="18px" height="18px" class="icon">
+                                <use href="./images/icons.svg#phone"></use>
+                            </svg>
+                        </label>
+                    </li>
+
+                    <li class="form-list-item">
+                        <label class="form-field">
+                            <span class="label">Пошта</span>
+                    
+                            <input type="email" name="email" class="input">
+                    
+                            <svg width="18px" height="18px" class="icon">
+                                <use href="./images/icons.svg#email"></use>
+                            </svg>
+                        </label>
+                    </li>
+                </ul>
+
+                <label class="form-field">
+                    <span class="label">Коментар</span>
+                    <textarea name="comment" rows="5" class="comment" placeholder="Введіть текст"></textarea>
+                </label>
+
+                <label class="form-agreement">
+                    <input type="checkbox" name="agreement-checkbox" class="check-input">  
+                    <span class="check-box"></span>
+                    Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link">Умови договору</a>
+                </label>
+
+                <button type="submit" class="modal-form-btn">Відправити</button>
+            </form>
+ 
         </div>
     </div>
 
