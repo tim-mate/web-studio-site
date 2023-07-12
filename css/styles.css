@@ -566,14 +566,18 @@ button {
     letter-spacing: 0.42px;
 }
 
-.agreement-label {
-    margin-left: 9px;
+.form-agreement:hover {
+    cursor: pointer;
 }
 
 .agreement-link:visited,
 .agreement-link:active,
 .agreement-link {
     color: var(--accent-text-color);
+}
+
+.agreement-link {
+    margin-left: 5px;
 }
 
 .check-input {
@@ -588,9 +592,14 @@ button {
     display: block;
     width: 16px;
     height: 15px;
+    margin-right: 9px;
 
     border: 2px solid var(--headline-text-color);
     border-radius: 2px;
+}
+
+.check-input:focus + .check-box {
+    outline: 2px solid var(--accent-text-color);
 }
 
 .check-input:checked + .check-box {
@@ -904,6 +913,10 @@ button {
 
     transition: color 250ms var(--timing-function),
                 background-color 250ms var(--timing-function);
+}
+
+.projects-label:hover {
+    cursor: pointer;
 }
 
 .projects-label.first {

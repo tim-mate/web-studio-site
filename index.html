@@ -411,7 +411,7 @@
                         <label class="form-field">
                             <span class="label">Ім'я</span>
                     
-                            <input type="text" class="input">
+                            <input type="text" name="user" class="input">
 
                             <svg width="18px" height="18px" class="icon">
                                 <use href="./images/icons.svg#person"></use>
@@ -423,7 +423,9 @@
                         <label class="form-field">
                             <span class="label">Телефон</span>
                     
-                            <input type="text" class="input">
+                            <input type="tel" name="tel" class="input" 
+                            pattern="^\+?3?8?(0\d{9})$"
+                            title="Будь ласка, введіть дані в наступному форматі +380111111111">
                     
                             <svg width="18px" height="18px" class="icon">
                                 <use href="./images/icons.svg#phone"></use>
@@ -435,7 +437,7 @@
                         <label class="form-field">
                             <span class="label">Пошта</span>
                     
-                            <input type="text" class="input">
+                            <input type="email" name="email" class="input">
                     
                             <svg width="18px" height="18px" class="icon">
                                 <use href="./images/icons.svg#email"></use>
@@ -452,10 +454,8 @@
                 <label class="form-agreement">
                     <input type="checkbox" name="agreement-checkbox" class="check-input">  
                     <span class="check-box"></span>
-                    <span class="agreement-label">
-                        Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link">Умови договору</a>
-                    </span> 
-                </label> 
+                    Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link">Умови договору</a>
+                </label>
 
                 <button type="submit" class="modal-form-btn">Відправити</button>
             </form>
