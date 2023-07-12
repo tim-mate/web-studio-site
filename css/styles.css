@@ -46,6 +46,9 @@ button {
     cursor: pointer;
 }
 
+.socials-list-item:hover {
+    cursor: pointer;
+}
 
 /* Header */
 .header-container {
@@ -88,11 +91,10 @@ button {
 }
 
 .contacts {
-    padding: 32px 0;
-}
-
-.contacts {
     display: flex;
+    align-items: center;
+
+    padding: 32px 0;
 }
 
 .contacts-icon {
@@ -653,7 +655,6 @@ button {
     height: 120px;
     padding: 25px 100px;
     border-radius: 4px;
-
     background-color: var(--subsidiary-background-color);
 }
 
