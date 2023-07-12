@@ -26,7 +26,7 @@
             <nav>
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="./index.html" class="nav active">Студія</a></li>
-                    <li class="nav-list-item"><a href="./portfolio.html" class="nav active">Портфоліо</a></li>
+                    <li class="nav-list-item is-current"><a href="./portfolio.html" class="nav active">Портфоліо</a></li>
                     <li class="nav-list-item"><a href="" class="nav active">Контакти</a></li>
                 </ul>
             </nav>
@@ -60,32 +60,47 @@
             <h1 class="projects-ghost-title">Projects</h1>
 
             <div class="container">
-                <ul class="projects-buttons">
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn first-btn">Усі</button>
-                    </li>
+                <form class="filter">
+                    <ul class="projects-buttons">
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="all" id="all" class="projects-input" />
+                            <label class="projects-label first" for="all" >Усі</label>
+                        </li>
+                    
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="web" id="web" class="projects-input"/>
+                            <label class="projects-label" for="web">Веб-сайти</label>
+                        </li>
+                    
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="app" id="app" class="projects-input"/>
+                            <label class="projects-label" for="app">Додатки</label>
+                        </li>
+                    
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="design" id="design" class="projects-input" />
+                            <label class="projects-label" for="design">Дизайн</label>
+                        </li>
+                    
+                        <li class="projects-buttons-btn">
+                            <input type="radio" name="field" value="marketing" id="marketing" class="projects-input" />
+                            <label class="projects-label last" for="marketing">Маркетинг</label>
+                        </li>
+                    </ul>
+                </form>
+
                 
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn">Веб-сайти</button>
-                    </li>
-                
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn">Додатки</button>
-                    </li>
-                
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn">Дизайн</button>
-                    </li>
-                
-                    <li class="projects-buttons-btn">
-                        <button type="button" class="btn">Маркетинг</button>
-                    </li>
-                </ul>
                 
                 <ul class="projects-list">
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project1.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project1.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Технокряк</h2>
                             <p class="projects-desc">Веб-сайт</p>
                         </a>
@@ -93,7 +108,14 @@
                 
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project2.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project2.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                                    отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
                             <p class="projects-desc">Дизайн</p>
                         </a>
@@ -101,7 +123,14 @@
                 
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project3.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project3.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                                    отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Ресторан Seafood</h2>
                             <p class="projects-desc">Додаток</p>
                         </a>
@@ -109,7 +138,14 @@
                 
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project4.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project4.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                                    отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Проєкт Prime</h2>
                             <p class="projects-desc">Маркетинг</p>
                         </a>
@@ -117,7 +153,14 @@
                 
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project5.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project5.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                                    отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Проєкт Boxes</h2>
                             <p class="projects-desc">Додаток</p>
                         </a>
@@ -125,7 +168,14 @@
                 
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project6.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project6.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                                    отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Inspiration has no Borders</h2>
                             <p class="projects-desc">Веб-сайт</p>
                         </a>
@@ -133,7 +183,14 @@
                 
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project7.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project7.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                                    отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Видання Limited Edition</h2>
                             <p class="projects-desc">Дизайн</p>
                         </a>
@@ -141,7 +198,14 @@
                 
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project8.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project8.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                                    отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Проєкт LAB</h2>
                             <p class="projects-desc">Маркетинг</p>
                         </a>
@@ -149,7 +213,14 @@
                 
                     <li class="projects-list-item">
                         <a href="" class="projects-link">
-                            <img src="./images/project9.jpg" alt="Наш проєкт" height="294" width="370" />
+                            <div class="project-thumb">
+                                <img src="./images/project9.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <div class="project-overlay">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                                    отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                            </div>
                             <h2 class="projects-title">Growing Business</h2>
                             <p class="projects-desc">Додаток</p>
                         </a>
@@ -177,7 +248,8 @@
                             <br />
                         </li>
     
-                        <li class="address-list-item"><a href="tel:+380961111111" class="active tel">+38 096 111 11 11</a></li>
+                        <li href="tel:+380961111111" class="address-list-item"><a class="active tel">+38 096 111 11 11</a>
+                        </li>
                     </ul>
                 </address>
             </div>
@@ -210,6 +282,24 @@
                     </li>
                 </ul>
             </div>
+    
+            <form class="footer-form">
+                <b class="form-action">Підпишіться на розсилку</b>
+    
+                <div class="form-mail">
+                    <label class="form-field">
+                        <span class="form-label">E-mail</span>
+                        <input type="email" name="email" class="form-input">
+                    </label>
+    
+                    <button type="submit" class="form-btn">
+                        Підписатися
+                        <svg width="24px" height="24px">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
 </body>
