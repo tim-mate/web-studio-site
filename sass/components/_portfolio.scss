@@ -1,0 +1,131 @@
+/* Filter*/
+.projects__filter {
+    display: flex;
+    margin: 0 0 50px;
+    padding: 0;
+    justify-content: center;
+}
+
+.projects__label {
+    display: block;
+    height: 38px;
+    padding: 6px 22px;
+    margin-right: 8px;
+
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.48px;
+    
+    border-radius: 4px;
+    color: $headlineTextColor;
+    background-color: $subsidiaryBackgroundColor;
+
+    transition: color 250ms $timingFunction,
+                background-color 250ms $timingFunction;
+}
+
+.projects__label:hover {
+    cursor: pointer;
+}
+
+.projects-label--first {
+    padding: 6px 25px;
+}
+
+.projects-label--last {
+    margin: 0;
+}
+
+.projects__input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    position: absolute;
+}
+
+.projects__input:checked + .projects__label,
+.projects__input:hover + .projects__label,
+.projects__input:focus + .projects__label {
+    color: $headerBackgroundColor;
+    background-color: $accentTextColor;
+}
+
+/* Projects */
+.projects {
+    background-color: $headerBackgroundColor;
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projects__item {
+    width: 370px;
+    height: 404px;
+
+    border: 1px solid #EEE;
+
+    transition: box-shadow 250ms $timingFunction;
+}
+
+.projects__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects__overlay {
+    position: absolute;
+    top: 100%;
+    transform: translateY(0);
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.54px;
+
+    background: rgba(33, 150, 243, 0.9);
+    color: $headerBackgroundColor;
+    opacity: 0;
+
+    transition: transform 250ms $timingFunction, opacity 250ms $timingFunction;
+}
+
+.projects__item:hover .projects__overlay,
+.projects__item:focus .projects__overlay {
+    transform: translateY(-100%);
+
+    opacity: 1;
+}
+
+.projects__item:hover,
+.projects__item:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.projects__link:visited {
+    color: inherit;
+}
+
+.projects__title {
+    margin: 20px auto 4px 24px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: $headlineTextColor;
+}
+
+.projects__desc {
+    margin: 0 auto 20px 24px;
+
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
