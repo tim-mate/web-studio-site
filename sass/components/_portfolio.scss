@@ -1,9 +1,19 @@
 /* Filter*/
 .projects__filter {
     display: flex;
-    margin: 0 0 50px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin-bottom: 40px;
     padding: 0;
-    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }  
 }
 
 .projects__label {
@@ -28,11 +38,11 @@
     cursor: pointer;
 }
 
-.projects-label--first {
+.projects__label--first {
     padding: 6px 25px;
 }
 
-.projects-label--last {
+.projects__label--last {
     margin: 0;
 }
 
@@ -52,24 +62,43 @@
 }
 
 /* Projects */
+.projects__list {
+    margin: 0 auto;
+}
+
 .projects {
     background-color: $headerBackgroundColor;
 }
 
 .projects__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .projects__item {
-    width: 370px;
-    height: 404px;
-
     border: 1px solid #EEE;
-
     transition: box-shadow 250ms $timingFunction;
+
+    @media screen and (min-width: 768px) {
+        width: calc(50% - 15px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 30px * 2) / 3);
+    }
 }
+
+.projects__item:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
 
 .projects__thumb {
     position: relative;
@@ -99,7 +128,6 @@
 .projects__item:hover .projects__overlay,
 .projects__item:focus .projects__overlay {
     transform: translateY(-100%);
-
     opacity: 1;
 }
 
@@ -112,20 +140,22 @@
     color: inherit;
 }
 
-.projects__title {
-    margin: 20px auto 4px 24px;
+.projects__info {
+    padding: 20px 24px;
+}
 
-    font-weight: 700;
+.projects__title {
+    margin-bottom: 4px;
+
     font-size: 18px;
+    font-weight: 700;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 1.08px;
 
     color: $headlineTextColor;
 }
 
 .projects__desc {
-    margin: 0 auto 20px 24px;
-
     line-height: 1.88;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.48px;
 }
