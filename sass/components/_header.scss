@@ -5,6 +5,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
     background-color: $headerBackgroundColor;
 
     .menu-toggle {
@@ -12,17 +13,6 @@
             display: none;
         }
     }
-}
-
-.header::after {
-    position: absolute;
-    bottom: 0;
-
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(236, 236, 236, 1);
 }
 
 .header__container {
