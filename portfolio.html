@@ -21,35 +21,44 @@
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
-            <a href="/" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
+            <a href="./index.html" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
     
-            <nav>
-                <ul class="nav">
-                    <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li>
-                    <li class="nav__item is-current"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+            <div class="menu">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li>
+                        <li class="nav__item"><a href="./portfolio.html" class="nav__link is-current">Портфоліо</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+                    </ul>
+                </nav>
+    
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__mail">
+                            <svg width="16px" height="12px" class="contacts__icon">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+    
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__tel">
+                            <svg width="10px" height="16px" class="contacts__icon">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
     
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__mail">
-                        <svg width="16px" height="12px" class="contacts__icon">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
     
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__tel">
-                        <svg width="10px" height="16px" class="contacts__icon">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40px" height="40px" class="menu__icon">
+                    <use href="./images/icons.svg#menu-40"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -95,134 +104,260 @@
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project1.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project1-354.jpg 354w,
+                                        ./images/project1-354@2x.jpg 708w,
+                                        ./images/project1-370.jpg 370w,
+                                        ./images/project1-370@2x.jpg 740w,
+                                        ./images/project1-450.jpg 450w,
+                                        ./images/project1-450@2x.jpg 900w
+                                    "
+                                    src="./images/project1-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Технокряк</h2>
-                            <p class="projects__desc">Веб-сайт</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Технокряк</h2>
+                                <p class="projects__desc">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
                 
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project2.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project2-354.jpg 354w,
+                                        ./images/project2-354@2x.jpg 708w,
+                                        ./images/project2-370.jpg 370w,
+                                        ./images/project2-370@2x.jpg 740w,
+                                        ./images/project2-450.jpg 450w,
+                                        ./images/project2-450@2x.jpg 900w
+                                    "
+                                    src="./images/project2-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Постер New Orlean vs Golden Star</h2>
-                            <p class="projects__desc">Дизайн</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="projects__desc">Дизайн</p>
+                            </div>
                         </a>
                     </li>
                 
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project3.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project3-354.jpg 354w,
+                                        ./images/project3-354@2x.jpg 708w,
+                                        ./images/project3-370.jpg 370w,
+                                        ./images/project3-370@2x.jpg 740w,
+                                        ./images/project3-450.jpg 450w,
+                                        ./images/project3-450@2x.jpg 900w
+                                    "
+                                    src="./images/project3-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Ресторан Seafood</h2>
-                            <p class="projects__desc">Додаток</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Ресторан Seafood</h2>
+                                <p class="projects__desc">Додаток</p>
+                            </div>
                         </a>
                     </li>
                 
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project4.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project4-354.jpg 354w,
+                                        ./images/project4-354@2x.jpg 708w,
+                                        ./images/project4-370.jpg 370w,
+                                        ./images/project4-370@2x.jpg 740w,
+                                        ./images/project4-450.jpg 450w,
+                                        ./images/project4-450@2x.jpg 900w
+                                    "
+                                    src="./images/project4-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Проєкт Prime</h2>
-                            <p class="projects__desc">Маркетинг</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Проєкт Prime</h2>
+                                <p class="projects__desc">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                 
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project5.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project5-354.jpg 354w,
+                                        ./images/project5-354@2x.jpg 708w,
+                                        ./images/project5-370.jpg 370w,
+                                        ./images/project5-370@2x.jpg 740w,
+                                        ./images/project5-450.jpg 450w,
+                                        ./images/project5-450@2x.jpg 900w
+                                    "
+                                    src="./images/project5-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Проєкт Boxes</h2>
-                            <p class="projects__desc">Додаток</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Проєкт Boxes</h2>
+                                <p class="projects__desc">Додаток</p>
+                            </div>
                         </a>
                     </li>
                 
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project6.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project6-354.jpg 354w,
+                                        ./images/project6-354@2x.jpg 708w,
+                                        ./images/project6-370.jpg 370w,
+                                        ./images/project6-370@2x.jpg 740w,
+                                        ./images/project6-450.jpg 450w,
+                                        ./images/project6-450@2x.jpg 900w
+                                    "
+                                    src="./images/project6-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Inspiration has no Borders</h2>
-                            <p class="projects__desc">Веб-сайт</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Inspiration has no Borders</h2>
+                                <p class="projects__desc">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
                 
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project7.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project7-354.jpg 354w,
+                                        ./images/project7-354@2x.jpg 708w,
+                                        ./images/project7-370.jpg 370w,
+                                        ./images/project7-370@2x.jpg 740w,
+                                        ./images/project7-450.jpg 450w,
+                                        ./images/project7-450@2x.jpg 900w
+                                    "
+                                    src="./images/project1-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Видання Limited Edition</h2>
-                            <p class="projects__desc">Дизайн</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Видання Limited Edition</h2>
+                                <p class="projects__desc">Дизайн</p>
+                            </div>
                         </a>
                     </li>
                 
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project8.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project8-354.jpg 354w,
+                                        ./images/project8-354@2x.jpg 708w,
+                                        ./images/project8-370.jpg 370w,
+                                        ./images/project8-370@2x.jpg 740w,
+                                        ./images/project8-450.jpg 450w,
+                                        ./images/project8-450@2x.jpg 900w
+                                    "
+                                    src="./images/project8-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Проєкт LAB</h2>
-                            <p class="projects__desc">Маркетинг</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Проєкт LAB</h2>
+                                <p class="projects__desc">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                 
                     <li class="projects__item">
                         <a href="" class="projects__link">
                             <div class="projects__thumb">
-                                <img src="./images/project9.jpg" alt="Наш проєкт" height="294" width="370" />
+                                <img 
+                                    srcset="
+                                        ./images/project9-354.jpg 354w,
+                                        ./images/project9-354@2x.jpg 708w,
+                                        ./images/project9-370.jpg 370w,
+                                        ./images/project9-370@2x.jpg 740w,
+                                        ./images/project9-450.jpg 450w,
+                                        ./images/project9-450@2x.jpg 900w
+                                    "
+                                    src="./images/project9-270.jpg 270w,"
+                                    alt="Наш проєкт" 
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                />
                                 <div class="projects__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </div>
                             </div>
-                            <h2 class="projects__title">Growing Business</h2>
-                            <p class="projects__desc">Додаток</p>
+                            <div class="projects__info">
+                                <h2 class="projects__title">Growing Business</h2>
+                                <p class="projects__desc">Додаток</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -248,8 +383,8 @@
                             <br />
                         </li>
     
-                        <li href="tel:+380961111111" class="address__item"><a class="address__tel">+38 096 111 11
-                                11</a></li>
+                        <li href="tel:+380961111111" class="address__item"><a class="address__tel">+38 096 111 11 11</a>
+                        </li>
                     </ul>
                 </address>
             </div>
@@ -293,7 +428,7 @@
                     </label>
     
                     <button type="submit" class="form__btn">
-                        Підписатися
+                        <span class="btn__text">Підписатися</span>
                         <svg width="24px" height="24px">
                             <use href="./images/icons.svg#send"></use>
                         </svg>
@@ -302,5 +437,56 @@
             </form>
         </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <nav>
+            <ul class="nav">
+                <li class="nav__item is-current"><a href="./index.html" class="nav__link">Студія</a></li>
+                <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+            </ul>
+        </nav>
+    
+        <ul class="contacts">
+            <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__tel">
+                    +38 096 111 11 11
+                </a>
+            </li>
+    
+            <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__mail">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+    
+        <ul class="soc">
+            <li class="soc__item">
+                <a href="" class="soc__link">Instagram</a>
+            </li>
+    
+            <li class="soc__item">
+                <a href="" class="soc__link">Twitter</a>
+            </li>
+    
+            <li class="soc__item">
+                <a href="" class="soc__link">Facebook</a>
+            </li>
+    
+            <li class="soc__item">
+                <a href="" class="soc__link">LinkedIn</a>
+            </li>
+        </ul>
+    
+        <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40px" height="40px" class="menu__icon">
+                <use href="./images/icons.svg#close-40"></use>
+            </svg>
+        </button>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
