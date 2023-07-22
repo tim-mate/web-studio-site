@@ -287,6 +287,9 @@ button:hover,
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
@@ -318,49 +321,45 @@ button:hover,
 }
 
 .menu-container .nav__item {
-  font-size: 8.3333333333vw;
   font-weight: 500;
   letter-spacing: 0.8px;
   color: rgb(33, 33, 33);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .menu-container .nav__item {
     font-size: 40px;
   }
 }
 .menu-container .nav__item:not(:last-child) {
-  margin-bottom: 4vh;
+  margin-bottom: 14px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .menu-container .nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 .menu-container .contacts {
-  position: absolute;
-  bottom: 134px;
+  margin-bottom: 64px;
 }
 .menu-container .contacts__tel {
   display: block;
-  margin-bottom: 4vh;
-  font-size: 7.1428571429vw;
+  margin-bottom: 14px;
   font-weight: 500;
   letter-spacing: 0.68px;
   color: rgb(33, 150, 243);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .menu-container .contacts__tel {
-    font-size: 34px;
     margin-bottom: 32px;
+    font-size: 34px;
   }
 }
 .menu-container .contacts__mail {
   display: block;
-  font-size: 5vw;
   font-weight: 500;
   letter-spacing: 0.48px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .menu-container .contacts__mail {
     font-size: 24px;
   }
@@ -372,19 +371,22 @@ button:hover,
 }
 
 .soc {
-  position: absolute;
-  bottom: 48px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .soc__link {
-  font-size: 18px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.36px;
   color: rgb(33, 150, 243);
+}
+@media screen and (min-width: 380px) {
+  .soc__link {
+    font-size: 18px;
+  }
 }
 
 .soc__item:not(:last-child)::after {
